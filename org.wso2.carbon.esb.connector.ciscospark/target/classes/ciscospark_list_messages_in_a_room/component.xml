@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="ciscospark_list_messages_in_a_room" type="synapse/template">
+  <subComponents>
+    <component name="searchpeople">
+      <file>searchpeople.xml</file>
+      <description>Get list of messages in a particular room</description>
+    </component>
+  </subComponents>
+</component>

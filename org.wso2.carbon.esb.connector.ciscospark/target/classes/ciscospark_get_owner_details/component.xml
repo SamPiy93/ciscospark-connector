@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="ciscospark_get_owner_details" type="synapse/template">
+  <subComponents>
+    <component name="me">
+      <file>me.xml</file>
+      <description>Get details of the owner</description>
+    </component>
+  </subComponents>
+</component>

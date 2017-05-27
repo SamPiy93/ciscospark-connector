@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="ciscospark_list_people" type="synapse/template">
+  <subComponents>
+    <component name="search">
+      <file>search.xml</file>
+      <description>Get list of users in an organization</description>
+    </component>
+  </subComponents>
+</component>

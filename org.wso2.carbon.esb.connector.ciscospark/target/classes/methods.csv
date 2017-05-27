@@ -1,0 +1,5 @@
+ciscospark_config,init,accessToken,Configuration file
+ciscospark_list_people,search,query,Get list of users in an organization
+ciscospark_list_messages_in_a_room,searchpeople,roomId,Get list of messages in a particular room
+ciscospark_get_message_details,messages,messageId,Get details of a particular message
+ciscospark_get_room_details,searchrooms,roomId,Get room details

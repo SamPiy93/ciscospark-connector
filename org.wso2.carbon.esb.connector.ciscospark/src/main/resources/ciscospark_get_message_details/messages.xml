@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template name="messages" 
+	xmlns="http://ws.apache.org/ns/synapse">
+	<parameter name="messageId" description="The messageId" />
+	<sequence>
+		<property expression="$func:messageId" name="uri.var.messageId" />
+		<property name="Accept-Encoding" action="remove" scope="transport" />
+		<!-- <property name="messageType" scope="axis2" value="application/x-www-form-urlencoded" /> -->
+		<property name="messageType" scope="axis2" value="application/json" />
+		<call>
+			<endpoint>
+				<!-- <http method="get" uri-template="https://api.ciscospark.com/v1/people?email=madumal.piyasundara@gmail.com" /> -->
+				<http method="get" uri-template="https://api.ciscospark.com/v1/messages/{uri.var.messageId}" />
+			</endpoint>
+		</call>
+	</sequence>
+</template>

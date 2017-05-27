@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy 
+	xmlns="http://ws.apache.org/ns/synapse" name="ciscospark_get_room_details" transports="https,http" statistics="disable" trace="disable" startOnLoad="true">
+	<target>
+		<inSequence>
+			<property name="accessToken" expression="json-eval($.accessToken)" />
+			<property name="roomId" expression="json-eval($.roomId)" />
+			<ciscospark.init>
+				<accessToken>{$ctx:accessToken}</accessToken>
+			</ciscospark.init>
+			<ciscospark.searchrooms>
+				<roomId>{$ctx:roomId}</roomId>
+			</ciscospark.searchrooms>
+			<respond />
+		</inSequence>
+		<outSequence>
+			<log />
+			<send />
+		</outSequence>
+	</target>
+	<description />
+</proxy>  

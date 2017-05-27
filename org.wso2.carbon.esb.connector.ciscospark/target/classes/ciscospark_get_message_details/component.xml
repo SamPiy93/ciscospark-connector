@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="ciscospark_get_message_details" type="synapse/template">
+  <subComponents>
+    <component name="messages">
+      <file>messages.xml</file>
+      <description>Get details of a particular message</description>
+    </component>
+  </subComponents>
+</component>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="ciscospark_get_room_details" type="synapse/template">
+  <subComponents>
+    <component name="searchrooms">
+      <file>searchrooms.xml</file>
+      <description>Get room details</description>
+    </component>
+  </subComponents>
+</component>
